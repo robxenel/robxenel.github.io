@@ -1,0 +1,1353 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>麻豆不打烊早知道 - 官方视频门户_城市夜生活影像社区 | 持续更新</title>
+<meta name="description" content="麻豆不打烊早知道官方网站，专注城市夜生活与在地文化的原创视频内容社区，每晚更新不打烊的城市影像、创作者故事与企业动态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1722'/%3E%3Ccircle cx='32' cy='32' r='16' fill='none' stroke='%23ff7a45' stroke-width='4'/%3E%3Cpath d='M27 24 L44 32 L27 40 Z' fill='%23ff7a45'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --md-nb-bg:#0f1722;
+    --md-nb-bg-soft:#16202e;
+    --md-nb-card:#1b2635;
+    --md-nb-line:#2a3746;
+    --md-nb-text:#e8eef5;
+    --md-nb-muted:#93a3b5;
+    --md-nb-accent:#ff7a45;
+    --md-nb-accent-2:#3ee6b0;
+    --md-nb-warm:#ffd166;
+    --md-nb-radius:14px;
+    --md-nb-sticky:112px;
+    --md-nb-font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--md-nb-font);
+    background:var(--md-nb-bg);
+    color:var(--md-nb-text);
+    line-height:1.75;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;letter-spacing:.2px;}
+  p{margin:0 0 12px;}
+  ul,ol{margin:0;padding-left:1.2em;}
+  section{scroll-margin-top:var(--md-nb-sticky);}
+  [id]{scroll-margin-top:var(--md-nb-sticky);}
+  .md-nb-container{width:min(1180px,92vw);margin:0 auto;}
+  .md-nb-accent{color:var(--md-nb-accent);}
+  .md-nb-mini{font-size:13px;color:var(--md-nb-muted);}
+
+  /* ===== sticky: notice + header ===== */
+  .md-nb-sticky-wrap{
+    position:sticky;top:0;z-index:60;
+    backdrop-filter:blur(10px);
+    background:rgba(13,20,29,.94);
+    border-bottom:1px solid var(--md-nb-line);
+  }
+  .md-nb-notice{
+    background:linear-gradient(90deg,#ff7a45,#ff9f45 55%,#ffd166);
+    color:#20140b;
+    font-size:13.5px;
+    padding:8px 0;
+    font-weight:600;
+  }
+  .md-nb-notice .md-nb-container{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+  .md-nb-notice-tag{
+    background:#20140b;color:#ffd166;border-radius:999px;
+    padding:2px 10px;font-size:12px;letter-spacing:1px;white-space:nowrap;
+  }
+  .md-nb-notice-list{display:flex;gap:18px;flex-wrap:wrap;margin:0;padding:0;list-style:none;}
+  .md-nb-notice-list li{white-space:nowrap;}
+  .md-nb-notice-list li::before{content:"▸";margin-right:5px;opacity:.7;}
+
+  .md-nb-header{padding:10px 0;}
+  .md-nb-header-inner{display:flex;align-items:center;gap:20px;}
+  .md-nb-brand{display:flex;align-items:center;gap:11px;flex-shrink:0;}
+  .md-nb-brand-mark{
+    width:42px;height:42px;border-radius:12px;flex-shrink:0;
+    background:radial-gradient(circle at 30% 25%,#ff9f45,#ff5a1f 70%);
+    display:grid;place-items:center;
+    box-shadow:0 4px 18px rgba(255,122,69,.35);
+  }
+  .md-nb-brand-mark svg{width:22px;height:22px;}
+  .md-nb-brand-name{font-size:19px;font-weight:800;letter-spacing:.5px;}
+  .md-nb-brand-sub{font-size:11.5px;color:var(--md-nb-muted);letter-spacing:2px;}
+  .md-nb-nav{flex:1;display:flex;gap:4px;flex-wrap:wrap;}
+  .md-nb-nav a{
+    font-size:14.5px;color:var(--md-nb-muted);padding:8px 12px;border-radius:9px;
+    transition:.2s;white-space:nowrap;
+  }
+  .md-nb-nav a:hover{color:var(--md-nb-text);background:var(--md-nb-bg-soft);}
+  .md-nb-header-tools{display:flex;align-items:center;gap:10px;}
+  .md-nb-search{
+    display:flex;align-items:center;gap:6px;
+    background:var(--md-nb-bg-soft);border:1px solid var(--md-nb-line);
+    border-radius:999px;padding:5px 6px 5px 14px;
+  }
+  .md-nb-search input{
+    background:transparent;border:0;outline:0;color:var(--md-nb-text);
+    font-size:13.5px;width:132px;font-family:inherit;
+  }
+  .md-nb-search input::placeholder{color:#6b7b8d;}
+  .md-nb-search button{
+    border:0;cursor:pointer;background:var(--md-nb-accent);color:#1a0f08;
+    font-weight:700;font-size:13px;border-radius:999px;padding:6px 13px;font-family:inherit;
+  }
+  .md-nb-menu-btn{
+    display:none;background:var(--md-nb-bg-soft);border:1px solid var(--md-nb-line);
+    color:var(--md-nb-text);border-radius:10px;width:42px;height:40px;cursor:pointer;
+    font-size:18px;line-height:1;
+  }
+  .md-nb-search-tip{
+    font-size:12.5px;color:var(--md-nb-accent-2);min-height:0;
+    width:100%;padding:0 0 2px;
+  }
+
+  /* ===== hero ===== */
+  .md-nb-hero{padding:44px 0 34px;position:relative;overflow:hidden;}
+  .md-nb-hero::after{
+    content:"";position:absolute;right:-160px;top:-120px;width:520px;height:520px;
+    background:radial-gradient(circle,rgba(255,122,69,.16),transparent 66%);
+    pointer-events:none;
+  }
+  .md-nb-hero-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr);gap:40px;align-items:center;}
+  .md-nb-hero-kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:2px;
+    color:var(--md-nb-accent-2);border:1px solid rgba(62,230,176,.35);
+    border-radius:999px;padding:5px 13px;margin-bottom:18px;
+  }
+  .md-nb-hero h1{
+    font-size:clamp(30px,4.6vw,52px);letter-spacing:1px;margin-bottom:16px;
+    background:linear-gradient(100deg,#ffffff 30%,#ffb27d 80%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    word-break:break-word;
+  }
+  .md-nb-hero-lead{font-size:16.5px;color:#c3cfdb;max-width:34em;}
+  .md-nb-hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 26px;}
+  .md-nb-btn{
+    border:0;cursor:pointer;font-family:inherit;font-size:14.5px;font-weight:700;
+    padding:11px 22px;border-radius:11px;transition:.2s;display:inline-flex;
+    align-items:center;gap:8px;
+  }
+  .md-nb-btn-primary{background:linear-gradient(100deg,#ff7a45,#ff9f45);color:#1a0f08;box-shadow:0 6px 22px rgba(255,122,69,.3);}
+  .md-nb-btn-primary:hover{transform:translateY(-2px);}
+  .md-nb-btn-ghost{background:transparent;border:1px solid var(--md-nb-line);color:var(--md-nb-text);}
+  .md-nb-btn-ghost:hover{border-color:var(--md-nb-accent);color:var(--md-nb-accent);}
+  .md-nb-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:8px;}
+  .md-nb-stat{
+    background:var(--md-nb-bg-soft);border:1px solid var(--md-nb-line);
+    border-radius:12px;padding:13px 14px;
+  }
+  .md-nb-stat b{display:block;font-size:22px;color:var(--md-nb-warm);letter-spacing:.5px;}
+  .md-nb-stat span{font-size:12.5px;color:var(--md-nb-muted);}
+  .md-nb-hero-visual{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--md-nb-line);box-shadow:0 30px 70px rgba(0,0,0,.45);}
+  .md-nb-hero-visual img{width:100%;aspect-ratio:16/11;object-fit:cover;}
+  .md-nb-hero-visual-cap{
+    position:absolute;left:0;right:0;bottom:0;padding:34px 18px 16px;
+    background:linear-gradient(transparent,rgba(8,13,19,.92));
+    display:flex;justify-content:space-between;align-items:flex-end;gap:12px;
+  }
+  .md-nb-hero-visual-cap strong{font-size:15.5px;}
+  .md-nb-hero-visual-cap span{font-size:12.5px;color:var(--md-nb-muted);}
+  .md-nb-live-dot{
+    display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--md-nb-accent);
+    margin-right:6px;animation:md-nb-pulse 1.4s infinite;
+  }
+  @keyframes md-nb-pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.8);}}
+
+  /* ===== generic section ===== */
+  .md-nb-sec{padding:52px 0;border-top:1px solid var(--md-nb-line);}
+  .md-nb-sec-head{margin-bottom:28px;max-width:820px;}
+  .md-nb-sec-eyebrow{font-size:12.5px;letter-spacing:3px;color:var(--md-nb-accent);font-weight:700;margin-bottom:8px;}
+  .md-nb-sec h2{font-size:clamp(23px,2.7vw,31px);margin-bottom:10px;}
+  .md-nb-sec-desc{color:var(--md-nb-muted);font-size:15px;}
+
+  /* ===== spotlight (A) ===== */
+  .md-nb-spotlight{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:28px;}
+  .md-nb-feature{
+    background:var(--md-nb-card);border:1px solid var(--md-nb-line);border-radius:var(--md-nb-radius);
+    overflow:hidden;display:flex;flex-direction:column;transition:.25s;
+  }
+  .md-nb-feature:hover{transform:translateY(-4px);border-color:rgba(255,122,69,.5);}
+  .md-nb-feature img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+  .md-nb-feature-body{padding:20px 22px;}
+  .md-nb-feature-body h3{font-size:20px;margin-bottom:10px;}
+  .md-nb-feature-body p{color:#b7c3d1;font-size:14.5px;}
+  .md-nb-tags{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;}
+  .md-nb-tag{
+    font-size:12px;color:var(--md-nb-accent-2);border:1px solid rgba(62,230,176,.3);
+    border-radius:999px;padding:2px 10px;background:rgba(62,230,176,.06);
+  }
+  .md-nb-meta{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--md-nb-muted);margin-top:10px;}
+  .md-nb-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;}
+  .md-nb-act{
+    border:1px solid var(--md-nb-line);background:transparent;color:var(--md-nb-muted);
+    border-radius:9px;padding:5px 12px;font-size:12.5px;cursor:pointer;font-family:inherit;
+    transition:.18s;display:inline-flex;align-items:center;gap:5px;
+  }
+  .md-nb-act:hover{color:var(--md-nb-text);border-color:var(--md-nb-accent);}
+  .md-nb-act.is-on{color:var(--md-nb-accent);border-color:var(--md-nb-accent);background:rgba(255,122,69,.1);}
+  .md-nb-act.is-saved{color:var(--md-nb-accent-2);border-color:var(--md-nb-accent-2);background:rgba(62,230,176,.1);}
+  .md-nb-side-list{display:flex;flex-direction:column;gap:12px;}
+  .md-nb-side-item{
+    display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:start;
+    background:var(--md-nb-bg-soft);border:1px solid var(--md-nb-line);
+    border-radius:12px;padding:14px 16px;transition:.2s;
+  }
+  .md-nb-side-item:hover{border-color:var(--md-nb-accent);transform:translateX(3px);}
+  .md-nb-side-idx{font-size:19px;font-weight:800;color:var(--md-nb-accent);opacity:.75;line-height:1;}
+  .md-nb-side-item h3{font-size:15.5px;margin-bottom:5px;}
+  .md-nb-side-item p{font-size:13px;color:var(--md-nb-muted);margin:0 0 6px;}
+
+  /* ===== video cards grid ===== */
+  .md-nb-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+  .md-nb-video-card{
+    background:var(--md-nb-card);border:1px solid var(--md-nb-line);border-radius:var(--md-nb-radius);
+    overflow:hidden;display:flex;flex-direction:column;transition:.25s;
+  }
+  .md-nb-video-card:hover{transform:translateY(-4px);border-color:rgba(255,122,69,.45);}
+  .md-nb-video-card img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+  .md-nb-video-body{padding:16px 18px;display:flex;flex-direction:column;flex:1;}
+  .md-nb-video-body h3{font-size:16.5px;margin-bottom:8px;}
+  .md-nb-video-body p{font-size:13.5px;color:#b0bdca;flex:1;}
+  .md-nb-video-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:12.5px;color:var(--md-nb-muted);margin-top:10px;}
+  .md-nb-video-foot b{color:var(--md-nb-warm);font-weight:700;}
+
+  /* ===== video list ===== */
+  .md-nb-vlist{display:flex;flex-direction:column;gap:14px;}
+  .md-nb-vrow{
+    display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;
+    background:var(--md-nb-bg-soft);border:1px solid var(--md-nb-line);
+    border-radius:12px;padding:16px 18px;transition:.2s;
+  }
+  .md-nb-vrow:hover{border-color:rgba(255,122,69,.45);}
+  .md-nb-vrow h3{font-size:16px;margin-bottom:6px;}
+  .md-nb-vrow p{font-size:13.5px;color:#aab7c5;margin:0 0 8px;}
+  .md-nb-vrow-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex-shrink:0;}
+
+  /* ===== topics ===== */
+  .md-nb-topic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+  .md-nb-topic{
+    background:linear-gradient(160deg,var(--md-nb-card),var(--md-nb-bg-soft));
+    border:1px solid var(--md-nb-line);border-radius:var(--md-nb-radius);
+    padding:20px 22px;display:flex;flex-direction:column;
+  }
+  .md-nb-topic-badge{
+    align-self:flex-start;font-size:11.5px;letter-spacing:1.5px;color:var(--md-nb-warm);
+    border:1px solid rgba(255,209,102,.35);border-radius:999px;padding:2px 10px;margin-bottom:12px;
+  }
+  .md-nb-topic h3{font-size:18px;margin-bottom:8px;}
+  .md-nb-topic p{font-size:13.5px;color:var(--md-nb-muted);}
+  .md-nb-topic ul{font-size:13px;color:#aebbca;margin-top:6px;}
+  .md-nb-topic ul li{margin-bottom:4px;}
+  .md-nb-topic-foot{margin-top:auto;padding-top:12px;font-size:12.5px;color:var(--md-nb-accent-2);}
+
+  /* ===== keyword deep dive ===== */
+  .md-nb-deep{
+    display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr);gap:34px;align-items:start;
+  }
+  .md-nb-deep h3{font-size:19px;margin:26px 0 10px;color:#fff;}
+  .md-nb-deep h3:first-child{margin-top:0;}
+  .md-nb-deep p{color:#b9c5d3;font-size:15px;}
+  .md-nb-deep-card{
+    background:var(--md-nb-card);border:1px solid var(--md-nb-line);
+    border-radius:var(--md-nb-radius);padding:20px 22px;position:sticky;top:calc(var(--md-nb-sticky) + 16px);
+  }
+  .md-nb-deep-card h4{font-size:15px;color:var(--md-nb-warm);margin-bottom:12px;letter-spacing:1px;}
+  .md-nb-deep-card ul{font-size:13.5px;color:#aebbca;padding-left:1.1em;}
+  .md-nb-deep-card li{margin-bottom:8px;}
+
+  /* ===== authors ===== */
+  .md-nb-authors{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;}
+  .md-nb-author{
+    background:var(--md-nb-bg-soft);border:1px solid var(--md-nb-line);border-radius:var(--md-nb-radius);
+    padding:20px;transition:.22s;
+  }
+  .md-nb-author:hover{border-color:rgba(62,230,176,.4);transform:translateY(-3px);}
+  .md-nb-avatar{
+    width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+    font-weight:800;font-size:19px;color:#141c26;margin-bottom:12px;
+  }
+  .md-nb-author h3{font-size:16.5px;margin-bottom:4px;}
+  .md-nb-author .md-nb-role{font-size:12.5px;color:var(--md-nb-accent-2);margin-bottom:8px;}
+  .md-nb-author p{font-size:13px;color:#aebbca;margin-bottom:10px;}
+  .md-nb-author-foot{display:flex;justify-content:space-between;font-size:12px;color:var(--md-nb-muted);}
+  .md-nb-author-btn{
+    margin-top:12px;width:100%;border:1px solid var(--md-nb-line);background:transparent;
+    color:var(--md-nb-muted);border-radius:9px;padding:6px;font-size:12.5px;cursor:pointer;font-family:inherit;
+    transition:.18s;
+  }
+  .md-nb-author-btn:hover{color:var(--md-nb-accent-2);border-color:var(--md-nb-accent-2);}
+
+  /* ===== comments ===== */
+  .md-nb-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+  .md-nb-comment{
+    background:var(--md-nb-bg-soft);border:1px solid var(--md-nb-line);border-left:3px solid var(--md-nb-accent);
+    border-radius:10px;padding:16px 18px;
+  }
+  .md-nb-comment-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px;}
+  .md-nb-comment-head strong{font-size:14px;}
+  .md-nb-comment-head span{font-size:12px;color:var(--md-nb-muted);}
+  .md-nb-comment p{font-size:13.5px;color:#b9c5d3;margin:0;}
+
+  /* ===== ranking ===== */
+  .md-nb-rank{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+  .md-nb-rank-col{background:var(--md-nb-card);border:1px solid var(--md-nb-line);border-radius:var(--md-nb-radius);padding:20px 22px;}
+  .md-nb-rank-col h3{font-size:16.5px;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+  .md-nb-rank-col h3::before{content:"";width:6px;height:18px;border-radius:3px;background:var(--md-nb-accent);}
+  .md-nb-rank-list{list-style:none;padding:0;margin:0;counter-reset:md-nb-rank;}
+  .md-nb-rank-list li{
+    display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;
+    font-size:13.5px;padding:9px 0;border-bottom:1px dashed var(--md-nb-line);
+    counter-increment:md-nb-rank;
+  }
+  .md-nb-rank-list li:last-child{border-bottom:0;}
+  .md-nb-rank-list li::before{
+    content:counter(md-nb-rank);font-weight:800;color:var(--md-nb-accent);font-size:13px;
+    width:20px;text-align:center;
+  }
+  .md-nb-rank-list li b{color:var(--md-nb-warm);font-size:12.5px;font-weight:700;}
+
+  /* ===== news / partners / faq ===== */
+  .md-nb-two-col{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start;}
+  .md-nb-news-list{list-style:none;padding:0;margin:0;}
+  .md-nb-news-list li{
+    padding:14px 0;border-bottom:1px dashed var(--md-nb-line);
+  }
+  .md-nb-news-list li:last-child{border-bottom:0;}
+  .md-nb-news-list time{font-size:12px;color:var(--md-nb-accent-2);margin-right:10px;}
+  .md-nb-news-list strong{font-size:14.5px;}
+  .md-nb-news-list p{font-size:13px;color:var(--md-nb-muted);margin:4px 0 0;}
+  .md-nb-partner-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+  .md-nb-partner{
+    border:1px solid var(--md-nb-line);border-radius:10px;padding:14px 16px;
+    background:var(--md-nb-bg-soft);font-size:13.5px;color:#bcc8d5;
+  }
+  .md-nb-partner b{display:block;color:var(--md-nb-text);font-size:14px;margin-bottom:3px;}
+  details.md-nb-faq{
+    background:var(--md-nb-bg-soft);border:1px solid var(--md-nb-line);
+    border-radius:11px;padding:14px 18px;margin-bottom:10px;
+  }
+  details.md-nb-faq summary{
+    cursor:pointer;font-size:14.5px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:10px;
+  }
+  details.md-nb-faq summary::-webkit-details-marker{display:none;}
+  details.md-nb-faq summary::after{content:"+";color:var(--md-nb-accent);font-size:18px;line-height:1;}
+  details.md-nb-faq[open] summary::after{content:"−";}
+  details.md-nb-faq p{font-size:13.5px;color:#aebbca;margin:10px 0 0;}
+
+  /* ===== cta / submission ===== */
+  .md-nb-cta{
+    background:linear-gradient(120deg,rgba(255,122,69,.16),rgba(62,230,176,.09));
+    border:1px solid rgba(255,122,69,.4);border-radius:18px;padding:34px;
+    display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;
+  }
+  .md-nb-cta h2{font-size:25px;margin-bottom:10px;}
+  .md-nb-cta p{color:#c4d0dc;font-size:14.5px;margin:0;}
+  .md-nb-cta-btns{display:flex;gap:10px;flex-wrap:wrap;}
+
+  /* ===== footer ===== */
+  .md-nb-footer{border-top:1px solid var(--md-nb-line);padding:44px 0 26px;background:#0b1119;}
+  .md-nb-footer-grid{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr));gap:28px;}
+  .md-nb-footer h4{font-size:14px;margin-bottom:12px;color:#fff;}
+  .md-nb-footer ul{list-style:none;padding:0;margin:0;font-size:13.5px;color:var(--md-nb-muted);}
+  .md-nb-footer li{margin-bottom:8px;}
+  .md-nb-footer p{font-size:13px;color:var(--md-nb-muted);}
+  .md-nb-footer-bottom{
+    margin-top:30px;padding-top:18px;border-top:1px solid var(--md-nb-line);
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#7a8898;
+  }
+
+  /* ===== toast / modal / backtop ===== */
+  .md-nb-toast{
+    position:fixed;left:50%;bottom:36px;transform:translateX(-50%) translateY(20px);
+    background:#20303f;color:#e8eef5;border:1px solid var(--md-nb-accent);
+    padding:11px 22px;border-radius:999px;font-size:13.5px;z-index:200;
+    opacity:0;pointer-events:none;transition:.25s;
+  }
+  .md-nb-toast.is-show{opacity:1;transform:translateX(-50%) translateY(0);}
+  .md-nb-modal{
+    position:fixed;inset:0;background:rgba(5,9,14,.78);z-index:180;
+    display:none;place-items:center;padding:20px;
+  }
+  .md-nb-modal.is-open{display:grid;}
+  .md-nb-modal-box{
+    background:var(--md-nb-card);border:1px solid var(--md-nb-line);border-radius:16px;
+    width:min(560px,100%);padding:26px 28px;max-height:84vh;overflow:auto;
+  }
+  .md-nb-modal-box h3{font-size:19px;margin-bottom:12px;}
+  .md-nb-modal-box p,.md-nb-modal-box li{font-size:14px;color:#b9c5d3;}
+  .md-nb-modal-close{
+    float:right;background:transparent;border:0;color:var(--md-nb-muted);
+    font-size:22px;cursor:pointer;line-height:1;
+  }
+  .md-nb-backtop{
+    position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;
+    background:var(--md-nb-accent);color:#1a0f08;border:0;font-size:19px;cursor:pointer;
+    display:none;place-items:center;z-index:120;box-shadow:0 8px 26px rgba(255,122,69,.4);
+  }
+  .md-nb-backtop.is-show{display:grid;}
+
+  /* reveal */
+  .md-nb-reveal{opacity:0;transform:translateY(16px);transition:opacity .5s,transform .5s;}
+  .md-nb-reveal.is-in{opacity:1;transform:none;}
+
+  /* ===== responsive ===== */
+  @media (max-width:980px){
+    .md-nb-hero-grid{grid-template-columns:1fr;gap:28px;}
+    .md-nb-spotlight{grid-template-columns:1fr;}
+    .md-nb-video-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .md-nb-deep{grid-template-columns:1fr;}
+    .md-nb-deep-card{position:static;}
+    .md-nb-rank{grid-template-columns:1fr;}
+    .md-nb-two-col{grid-template-columns:1fr;}
+    .md-nb-cta{grid-template-columns:1fr;}
+    .md-nb-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  }
+  @media (max-width:820px){
+    .md-nb-menu-btn{display:block;}
+    .md-nb-header-inner{flex-wrap:wrap;}
+    .md-nb-nav{
+      display:none;width:100%;order:5;padding-top:8px;border-top:1px solid var(--md-nb-line);margin-top:8px;
+    }
+    .md-nb-nav.is-open{display:flex;}
+    .md-nb-header-tools{margin-left:auto;}
+    .md-nb-search input{width:96px;}
+  }
+  @media (max-width:640px){
+    .md-nb-stats{grid-template-columns:1fr 1fr;}
+    .md-nb-video-grid{grid-template-columns:1fr;}
+    .md-nb-comments{grid-template-columns:1fr;}
+    .md-nb-vrow{grid-template-columns:1fr;}
+    .md-nb-vrow-right{align-items:flex-start;}
+    .md-nb-footer-grid{grid-template-columns:1fr;}
+    .md-nb-partner-grid{grid-template-columns:1fr;}
+    .md-nb-cta{padding:24px;}
+    .md-nb-notice-list{gap:10px;font-size:12.5px;}
+    .md-nb-hero{padding:30px 0 24px;}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="md-nb-sticky-wrap" id="md-nb-top">
+  <!-- 公告条 -->
+  <div class="md-nb-notice" role="region" aria-label="最新公告">
+    <div class="md-nb-container">
+      <span class="md-nb-notice-tag">刚刚更新</span>
+      <ul class="md-nb-notice-list">
+        <li>《凌晨两点的糖水铺》第 7 集上线，记录城南夜市收摊后的 18 分钟</li>
+        <li>“不打烊拍客计划”第二期报名开启，招募 50 位城市记录者</li>
+        <li>11 月度口碑榜发布，三位新创作者首次进入前十</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 页头 -->
+  <header class="md-nb-header">
+    <div class="md-nb-container md-nb-header-inner">
+      <a class="md-nb-brand" href="#md-nb-top" aria-label="麻豆不打烊早知道首页">
+        <span class="md-nb-brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M9 7.5 L17 12 L9 16.5 Z" fill="#20140b"/>
+          </svg>
+        </span>
+        <span>
+          <span class="md-nb-brand-name">麻豆不打烊早知道</span><br>
+          <span class="md-nb-brand-sub">城市夜影像 · 官方门户</span>
+        </span>
+      </a>
+      <nav class="md-nb-nav" id="md-nb-nav" aria-label="主导航">
+        <a href="#md-nb-focus">焦点</a>
+        <a href="#md-nb-videos">视频</a>
+        <a href="#md-nb-topics">专题企划</a>
+        <a href="#md-nb-deep">品牌解析</a>
+        <a href="#md-nb-authors">创作者</a>
+        <a href="#md-nb-rank">榜单口碑</a>
+        <a href="#md-nb-faq">帮助</a>
+      </nav>
+      <div class="md-nb-header-tools">
+        <div class="md-nb-search">
+          <input type="search" id="md-nb-search-input" placeholder="搜视频 / 创作者" aria-label="站内搜索">
+          <button type="button" id="md-nb-search-btn">搜索</button>
+        </div>
+        <button class="md-nb-menu-btn" id="md-nb-menu-btn" aria-label="展开导航菜单" aria-expanded="false">☰</button>
+      </div>
+      <div class="md-nb-search-tip" id="md-nb-search-tip" aria-live="polite"></div>
+    </div>
+  </header>
+</div>
+
+<main>
+  <!-- S2 品牌首屏 -->
+  <section class="md-nb-hero" aria-labelledby="md-nb-h1">
+    <div class="md-nb-container md-nb-hero-grid">
+      <div>
+        <span class="md-nb-hero-kicker">官方网站 · 每晚 21:00 更新</span>
+        <h1 id="md-nb-h1">麻豆不打烊早知道</h1>
+        <p class="md-nb-hero-lead">
+          一个以城市夜生活为切口、以真实记录为底色的原创视频品牌。我们相信城市在午夜之后才露出另一张脸，
+          于是把镜头对准深夜食摊、末班公交、通宵书店与守着灯的人。作为持续运营的视频内容平台，
+          这里汇集高清正版的夜游影像、创作者手记与在地文化观察，陪你度过每一个不想睡的夜晚。
+        </p>
+        <div class="md-nb-hero-btns">
+          <a class="md-nb-btn md-nb-btn-primary" href="#md-nb-videos">▶ 立即观看今夜精选</a>
+          <button class="md-nb-btn md-nb-btn-ghost" type="button" data-md-nb-modal="submit">我要投稿</button>
+          <button class="md-nb-btn md-nb-btn-ghost" type="button" data-md-nb-modal="about">了解品牌</button>
+        </div>
+        <div class="md-nb-stats">
+          <div class="md-nb-stat"><b data-md-nb-count="1286">0</b><span>原创视频累计发布</span></div>
+          <div class="md-nb-stat"><b data-md-nb-count="247">0</b><span>签约与入驻创作者</span></div>
+          <div class="md-nb-stat"><b data-md-nb-count="5300000">0</b><span>月度影像观看人次</span></div>
+        </div>
+      </div>
+      <figure class="md-nb-hero-visual">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%2314202f'/%3E%3Cstop offset='55%' stop-color='%232b2438'/%3E%3Cstop offset='100%' stop-color='%234a2b2a'/%3E%3C/linearGradient%3E%3ClinearGradient id='glow' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffd166'/%3E%3Cstop offset='1' stop-color='%23ff5a1f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23sky)'/%3E%3Ccircle cx='620' cy='120' r='52' fill='%23ffe9b0' opacity='0.85'/%3E%3Ccircle cx='620' cy='120' r='86' fill='%23ffd166' opacity='0.14'/%3E%3Cg fill='%23131b25'%3E%3Crect x='0' y='300' width='130' height='250'/%3E%3Crect x='132' y='250' width='96' height='300'/%3E%3Crect x='230' y='330' width='120' height='220'/%3E%3Crect x='540' y='270' width='110' height='280'/%3E%3Crect x='652' y='320' width='148' height='230'/%3E%3C/g%3E%3Cg fill='%23ffca7a' opacity='0.85'%3E%3Crect x='18' y='330' width='16' height='20'/%3E%3Crect x='52' y='330' width='16' height='20'/%3E%3Crect x='86' y='330' width='16' height='20'/%3E%3Crect x='18' y='372' width='16' height='20'/%3E%3Crect x='86' y='372' width='16' height='20'/%3E%3Crect x='150' y='282' width='14' height='18'/%3E%3Crect x='184' y='282' width='14' height='18'/%3E%3Crect x='150' y='320' width='14' height='18'/%3E%3Crect x='560' y='300' width='16' height='20'/%3E%3Crect x='600' y='300' width='16' height='20'/%3E%3Crect x='560' y='344' width='16' height='20'/%3E%3Crect x='680' y='350' width='18' height='20'/%3E%3Crect x='720' y='350' width='18' height='20'/%3E%3C/g%3E%3Crect x='0' y='470' width='800' height='80' fill='%230e151d'/%3E%3Cg%3E%3Crect x='300' y='390' width='200' height='110' rx='8' fill='%23271d1c'/%3E%3Crect x='312' y='402' width='176' height='58' rx='5' fill='url(%23glow)' opacity='0.92'/%3E%3Crect x='318' y='412' width='70' height='7' rx='3' fill='%231a0f08' opacity='0.6'/%3E%3Crect x='318' y='428' width='110' height='7' rx='3' fill='%231a0f08' opacity='0.45'/%3E%3Crect x='318' y='444' width='52' height='7' rx='3' fill='%231a0f08' opacity='0.35'/%3E%3C/g%3E%3Cg fill='%23ff7a45' opacity='0.5'%3E%3Ccircle cx='270' cy='452' r='4'/%3E%3Ccircle cx='530' cy='440' r='4'/%3E%3C/g%3E%3Cpath d='M0 470 Q200 430 400 462 T800 448 L800 470 Z' fill='%23121a23'/%3E%3C/svg%3E"
+             alt="深夜城市街道与亮着灯的糖水铺主视觉" width="800" height="550">
+        <figcaption class="md-nb-hero-visual-cap">
+          <div>
+            <strong><span class="md-nb-live-dot"></span>今夜直播 · 24:00 收摊之后</strong>
+            <span>城南夜市 · 时长 42 分钟 · 高清</span>
+          </div>
+          <span class="md-nb-mini">4.2 万人在看</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容 -->
+  <section class="md-nb-sec" id="md-nb-focus">
+    <div class="md-nb-container">
+      <div class="md-nb-sec-head md-nb-reveal">
+        <div class="md-nb-sec-eyebrow">TONIGHT FOCUS</div>
+        <h2>今夜焦点 · 麻豆不打烊早知道精选影像</h2>
+        <p class="md-nb-sec-desc">每晚挑选一组值得完整看完的原创内容，围绕城市夜行、深夜手艺与普通人的坚持展开，均由官方编辑与入驻创作者共同完成。</p>
+      </div>
+      <div class="md-nb-spotlight">
+        <article class="md-nb-feature md-nb-reveal">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='n1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232a1f38'/%3E%3Cstop offset='1' stop-color='%230f1a24'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23n1)'/%3E%3Cg stroke='%23ff9f45' stroke-width='2' opacity='0.35'%3E%3Cline x1='0' y1='360' x2='800' y2='360'/%3E%3C/g%3E%3Crect x='90' y='180' width='220' height='180' rx='6' fill='%231c2b38'/%3E%3Crect x='110' y='200' width='180' height='60' rx='4' fill='%23ffd166' opacity='0.75'/%3E%3Crect x='118' y='212' width='90' height='8' rx='4' fill='%23302112' opacity='0.7'/%3E%3Crect x='118' y='230' width='140' height='8' rx='4' fill='%23302112' opacity='0.5'/%3E%3Cg fill='%23e8eef5' opacity='0.85'%3E%3Ccircle cx='420' cy='230' r='22'/%3E%3Crect x='404' y='252' width='32' height='86' rx='12'/%3E%3C/g%3E%3Cg fill='%23ff7a45'%3E%3Ccircle cx='600' cy='210' r='14' opacity='0.9'/%3E%3Ccircle cx='660' cy='250' r='10' opacity='0.6'/%3E%3Ccircle cx='540' cy='260' r='8' opacity='0.5'/%3E%3C/g%3E%3Crect x='0' y='352' width='800' height='98' fill='%230c141c'/%3E%3Cg stroke='%233ee6b0' stroke-width='2' opacity='0.4'%3E%3Cpath d='M60 410 H240'/%3E%3Cpath d='M520 400 H740'/%3E%3C/g%3E%3Ctext x='600' y='430' font-family='sans-serif' font-size='16' fill='%2393a3b5'%3E02:14 AM%3C/text%3E%3C/svg%3E"
+               alt="凌晨两点仍在营业的糖水铺内景封面" width="800" height="450">
+          <div class="md-nb-feature-body">
+            <h3>《凌晨两点的糖水铺》：一条街的最后十八分钟</h3>
+            <p>镜头从收摊的塑料凳开始，跟着老板把最后一锅陈皮红豆沙分给还坐在路边的三个人。这条片子在剪辑上几乎没有配乐，只留下勺子碰碗、卷帘门落锁与远处货车倒车的声音。导演说，夜生活的价值不在热闹，而在热闹散场后仍然愿意守着的那盏灯。</p>
+            <div class="md-nb-tags">
+              <span class="md-nb-tag">城市探索</span>
+              <span class="md-nb-tag">日常记录</span>
+              <span class="md-nb-tag">治愈影像</span>
+            </div>
+            <div class="md-nb-meta">
+              <span>创作者：阿灯的夜行</span>
+              <span>播放 86,420</span>
+              <span>点赞 7,318</span>
+              <span>收藏 5,904</span>
+              <span>时长 18:24</span>
+            </div>
+            <div class="md-nb-actions">
+              <button class="md-nb-act" type="button" data-md-nb-like>♥ 点赞 <b data-md-nb-like-num>7318</b></button>
+              <button class="md-nb-act" type="button" data-md-nb-save>☆ 收藏</button>
+              <button class="md-nb-act" type="button" data-md-nb-copy data-md-nb-copy-title="凌晨两点的糖水铺">⧉ 复制链接</button>
+              <button class="md-nb-act" type="button" data-md-nb-comment aria-label="展开评论">💬 评论 428</button>
+            </div>
+          </div>
+        </article>
+        <div class="md-nb-side-list md-nb-reveal">
+          <article class="md-nb-side-item">
+            <span class="md-nb-side-idx">02</span>
+            <div>
+              <h3>末班公交 107 路的十二个乘客</h3>
+              <p>一趟从城东到火车站的夜班车，十二个各自赶路的人，和司机师傅沿路按下的十一次提示音。</p>
+              <div class="md-nb-meta"><span>作者：小满看城市</span><span>播放 42,166</span></div>
+            </div>
+          </article>
+          <article class="md-nb-side-item">
+            <span class="md-nb-side-idx">03</span>
+            <div>
+              <h3>通宵书店里，谁在读第三本同样的书</h3>
+              <p>凌晨一点半的书店，店员把归还的书重新上架，一位常客连续三周借走同一本散文集。</p>
+              <div class="md-nb-meta"><span>作者：林言手记</span><span>播放 31,502</span></div>
+            </div>
+          </article>
+          <article class="md-nb-side-item">
+            <span class="md-nb-side-idx">04</span>
+            <div>
+              <h3>夜宵摊的第四次搬迁：一份炒粉的二十年</h3>
+              <p>从巷口到菜市场对面，摊主用四次搬迁记住了一条街的房租变化和熟客的口味。</p>
+              <div class="md-nb-meta"><span>作者：锅气研究室</span><span>播放 27,940</span></div>
+            </div>
+          </article>
+          <article class="md-nb-side-item">
+            <span class="md-nb-side-idx">05</span>
+            <div>
+              <h3>修表匠的深夜工作台：齿轮比人更准时</h3>
+              <p>一位在城市夜市旁修了三十七年表的师傅，讲述他眼中“慢”和“准”的区别。</p>
+              <div class="md-nb-meta"><span>作者：慢镜组</span><span>播放 19,338</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 视频内容 · 三列卡片 -->
+  <section class="md-nb-sec" id="md-nb-videos">
+    <div class="md-nb-container">
+      <div class="md-nb-sec-head md-nb-reveal">
+        <div class="md-nb-sec-eyebrow">ORIGINAL SERIES</div>
+        <h2>热门视频 · 麻豆不打烊早知道官方发布</h2>
+        <p class="md-nb-sec-desc">为夜晚准备的精品内容合集，覆盖夜游、夜食、夜读与夜归四条主线，全部为高清正版原创，支持收藏与分享。</p>
+      </div>
+      <div class="md-nb-video-grid">
+        <article class="md-nb-video-card md-nb-reveal">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23131e29'/%3E%3Crect x='0' y='230' width='640' height='130' fill='%231b2633'/%3E%3Cg fill='%23ff7a45' opacity='0.85'%3E%3Crect x='60' y='150' width='90' height='80' rx='6'/%3E%3Crect x='166' y='130' width='90' height='100' rx='6'/%3E%3Crect x='272' y='160' width='90' height='70' rx='6'/%3E%3C/g%3E%3Cg fill='%23ffd166' opacity='0.8'%3E%3Crect x='72' y='164' width='12' height='12'/%3E%3Crect x='96' y='164' width='12' height='12'/%3E%3Crect x='178' y='146' width='12' height='12'/%3E%3Crect x='202' y='146' width='12' height='12'/%3E%3C/g%3E%3Cg fill='%23e8eef5' opacity='0.8'%3E%3Ccircle cx='480' cy='170' r='18'/%3E%3Crect x='466' y='188' width='28' height='70' rx='11'/%3E%3Ccircle cx='540' cy='190' r='14'/%3E%3Crect x='528' y='204' width='24' height='56' rx='10'/%3E%3C/g%3E%3Cg stroke='%233ee6b0' stroke-width='2' fill='none' opacity='0.5'%3E%3Ccircle cx='330' cy='80' r='34'/%3E%3Cpath d='M318 68 L346 80 L318 92 Z' fill='%233ee6b0'/%3E%3C/g%3E%3C/svg%3E"
+               alt="夜游步行街霓虹招牌与行人剪影封面" width="640" height="360">
+          <div class="md-nb-video-body">
+            <h3>夜游步行街：霓虹灯下的十二家老店</h3>
+            <p>用 15 分钟走完一条步行街，记录招牌、店主和打烊时间，给城市留一份夜间商业的影像档案。</p>
+            <div class="md-nb-tags"><span class="md-nb-tag">城市探索</span><span class="md-nb-tag">在地文化</span></div>
+            <div class="md-nb-video-foot">
+              <span>阿灯的夜行</span>
+              <span>播放 <b>52,118</b></span>
+            </div>
+            <div class="md-nb-actions">
+              <button class="md-nb-act" type="button" data-md-nb-like>♥ <b data-md-nb-like-num>4129</b></button>
+              <button class="md-nb-act" type="button" data-md-nb-save>☆ 收藏</button>
+              <button class="md-nb-act" type="button" data-md-nb-copy data-md-nb-copy-title="夜游步行街">⧉ 链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="md-nb-video-card md-nb-reveal">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23231911'/%3E%3Ccircle cx='500' cy='90' r='46' fill='%23ffb45c' opacity='0.35'/%3E%3Cg%3E%3Crect x='150' y='180' width='340' height='18' rx='9' fill='%233b2a1c'/%3E%3Crect x='170' y='198' width='12' height='120' fill='%232b1e13'/%3E%3Crect x='458' y='198' width='12' height='120' fill='%232b1e13'/%3E%3C/g%3E%3Cg%3E%3Crect x='240' y='130' width='90' height='50' rx='8' fill='%23ff7a45' opacity='0.85'/%3E%3Crect x='250' y='140' width='70' height='8' rx='4' fill='%23ffd8b0'/%3E%3Crect x='250' y='156' width='46' height='8' rx='4' fill='%23ffd8b0' opacity='0.7'/%3E%3C/g%3E%3Cg stroke='%23ffd166' stroke-width='2' opacity='0.6' fill='none'%3E%3Cpath d='M380 140 q20 -30 40 0'/%3E%3Cpath d='M400 140 q20 -30 40 0'/%3E%3C/g%3E%3Crect x='0' y='318' width='640' height='42' fill='%230f0b07'/%3E%3C/svg%3E"
+               alt="深夜炒粉摊锅气升腾的现场封面" width="640" height="360">
+          <div class="md-nb-video-body">
+            <h3>锅气三分钟：一家炒粉摊的出餐节奏</h3>
+            <p>拆解一份夜市炒粉从点单到出锅的三分钟，看摊主如何用一口铁锅同时照顾六份订单。</p>
+            <div class="md-nb-tags"><span class="md-nb-tag">美食烹饪</span><span class="md-nb-tag">实用技巧</span></div>
+            <div class="md-nb-video-foot">
+              <span>锅气研究室</span>
+              <span>播放 <b>38,720</b></span>
+            </div>
+            <div class="md-nb-actions">
+              <button class="md-nb-act" type="button" data-md-nb-like>♥ <b data-md-nb-like-num>2864</b></button>
+              <button class="md-nb-act" type="button" data-md-nb-save>☆ 收藏</button>
+              <button class="md-nb-act" type="button" data-md-nb-copy data-md-nb-copy-title="锅气三分钟">⧉ 链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="md-nb-video-card md-nb-reveal">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23141d2a'/%3E%3Crect x='70' y='60' width='220' height='280' fill='%23212e3d'/%3E%3Cg fill='%23ffca7a' opacity='0.8'%3E%3Crect x='90' y='90' width='30' height='60'/%3E%3Crect x='130' y='90' width='30' height='60'/%3E%3Crect x='170' y='90' width='30' height='60'/%3E%3Crect x='210' y='90' width='30' height='60'/%3E%3Crect x='90' y='170' width='30' height='60'/%3E%3Crect x='170' y='170' width='30' height='60'/%3E%3C/g%3E%3Cg fill='%23e8eef5' opacity='0.85'%3E%3Ccircle cx='400' cy='150' r='20'/%3E%3Crect x='384' y='170' width='32' height='90' rx='12'/%3E%3C/g%3E%3Crect x='340' y='260' width='180' height='10' rx='5' fill='%233ee6b0' opacity='0.5'/%3E%3Ctext x='340' y='300' font-family='sans-serif' font-size='18' fill='%2393a3b5'%3EBOOKS AFTER MIDNIGHT%3C/text%3E%3C/svg%3E"
+               alt="通宵书店书架与夜读人影封面" width="640" height="360">
+          <div class="md-nb-video-body">
+            <h3>夜读书单：五本适合凌晨翻开的散文</h3>
+            <p>书店主理人推荐五本短篇散文，配合窗外夜声实录音，做成一段可以戴着耳机听完的阅读陪伴。</p>
+            <div class="md-nb-tags"><span class="md-nb-tag">文化访谈</span><span class="md-nb-tag">治愈影像</span></div>
+            <div class="md-nb-video-foot">
+              <span>林言手记</span>
+              <span>播放 <b>26,905</b></span>
+            </div>
+            <div class="md-nb-actions">
+              <button class="md-nb-act" type="button" data-md-nb-like>♥ <b data-md-nb-like-num>1976</b></button>
+              <button class="md-nb-act" type="button" data-md-nb-save>☆ 收藏</button>
+              <button class="md-nb-act" type="button" data-md-nb-copy data-md-nb-copy-title="夜读书单">⧉ 链接</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="md-nb-vlist" style="margin-top:22px;">
+        <article class="md-nb-vrow md-nb-reveal">
+          <div>
+            <h3>夜班司机的一百个乘客故事 · 第 9 期</h3>
+            <p>这期讲一位每天凌晨三点在同一个路口上车的花店老板，她要把当天的余花送去墓园。</p>
+            <div class="md-nb-tags"><span class="md-nb-tag">人物访谈</span><span class="md-nb-tag">情感故事</span></div>
+          </div>
+          <div class="md-nb-vrow-right">
+            <span class="md-nb-mini">作者：小满看城市 · 播放 21,406</span>
+            <div class="md-nb-actions">
+              <button class="md-nb-act" type="button" data-md-nb-like>♥ <b data-md-nb-like-num>1542</b></button>
+              <button class="md-nb-act" type="button" data-md-nb-save>☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+        <article class="md-nb-vrow md-nb-reveal">
+          <div>
+            <h3>一支 MV 的夜拍流程：从分镜到调色</h3>
+            <p>把团队三晚的拍摄过程拆成五个步骤，附灯光位置图与夜景降噪参数，适合新手照做。</p>
+            <div class="md-nb-tags"><span class="md-nb-tag">创作幕后</span><span class="md-nb-tag">教程干货</span></div>
+          </div>
+          <div class="md-nb-vrow-right">
+            <span class="md-nb-mini">作者：慢镜组 · 播放 18,634</span>
+            <div class="md-nb-actions">
+              <button class="md-nb-act" type="button" data-md-nb-like>♥ <b data-md-nb-like-num>1207</b></button>
+              <button class="md-nb-act" type="button" data-md-nb-save>☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+        <article class="md-nb-vrow md-nb-reveal">
+          <div>
+            <h3>深夜便利店店员的十二小时</h3>
+            <p>从补货到结账，从煮关东煮到迎接第一批早班客，展示一个夜班岗位真实的体力与耐心。</p>
+            <div class="md-nb-tags"><span class="md-nb-tag">职场日常</span><span class="md-nb-tag">日常记录</span></div>
+          </div>
+          <div class="md-nb-vrow-right">
+            <span class="md-nb-mini">作者：白露记录 · 播放 15,882</span>
+            <div class="md-nb-actions">
+              <button class="md-nb-act" type="button" data-md-nb-like>♥ <b data-md-nb-like-num>986</b></button>
+              <button class="md-nb-act" type="button" data-md-nb-save>☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="md-nb-sec" id="md-nb-topics">
+    <div class="md-nb-container">
+      <div class="md-nb-sec-head md-nb-reveal">
+        <div class="md-nb-sec-eyebrow">SPECIAL PROJECTS</div>
+        <h2>专题企划 · 不打烊的内容生态</h2>
+        <p class="md-nb-sec-desc">围绕夜间生活搭建长期更新的专题，既有单条视频，也有系列连载与线下共创，欢迎持续关注与参与。</p>
+      </div>
+      <div class="md-nb-topic-grid">
+        <article class="md-nb-topic md-nb-reveal">
+          <span class="md-nb-topic-badge">连载中 · 每周四更新</span>
+          <h3>《城市打烊后》</h3>
+          <p>跟拍在深夜才开始的职业：环卫、夜班护士、批发市场挑货人、代驾与守夜保安，用平视镜头还原城市另一面的运转。</p>
+          <ul>
+            <li>第 6 集：批发市场的凌晨三点</li>
+            <li>第 7 集：急诊夜班交接的十分钟</li>
+            <li>第 8 集：代驾师傅的最后一单</li>
+          </ul>
+          <div class="md-nb-topic-foot">已更新 8 集 · 累计播放 41.2 万</div>
+        </article>
+        <article class="md-nb-topic md-nb-reveal">
+          <span class="md-nb-topic-badge">共创中 · 报名进行</span>
+          <h3>不打烊拍客计划</h3>
+          <p>面向所有热爱记录的创作者招募，提供选题辅导、设备支援与官方发布渠道，第二期计划招募 50 位城市记录者。</p>
+          <ul>
+            <li>报名时间：11 月 20 日 — 12 月 8 日</li>
+            <li>提交形式：3 分钟以内原创短片</li>
+            <li>入选权益：稿酬、流量扶持、署名认证</li>
+          </ul>
+          <div class="md-nb-topic-foot">已有 1,832 人提交作品 · 投票通道开放</div>
+        </article>
+        <article class="md-nb-topic md-nb-reveal">
+          <span class="md-nb-topic-badge">已完结 · 可回看</span>
+          <h3>夜里的一盏灯</h3>
+          <p>五集人物短片，每集只讲一个人和一处灯光：修表摊、夜校教室、24 小时洗衣房、寺庙檐下的路灯、天桥下的吉他手。</p>
+          <ul>
+            <li>第 1 集：修表摊的台灯</li>
+            <li>第 3 集：洗衣房的白色灯管</li>
+            <li>第 5 集：天桥下的吉他</li>
+          </ul>
+          <div class="md-nb-topic-foot">完结共 5 集 · 口碑评分 9.1</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4/关键词解析 -->
+  <section class="md-nb-sec" id="md-nb-deep">
+    <div class="md-nb-container">
+      <div class="md-nb-sec-head md-nb-reveal">
+        <div class="md-nb-sec-eyebrow">BRAND INSIGHT</div>
+        <h2>品牌深度解析 · 为什么是麻豆不打烊早知道</h2>
+        <p class="md-nb-sec-desc">一个名字背后，是一整套关于夜晚、城市与记录方式的选择。以下从品牌理念、内容方法、社区运营与社会责任四个角度展开。</p>
+      </div>
+      <div class="md-nb-deep">
+        <div class="md-nb-reveal">
+          <h3>一、名字里的态度：不打烊是一种承诺</h3>
+          <p>“麻豆不打烊早知道”这八个字，最容易被忽略的是“早知道”。很多夜生活内容只负责展示热闹，而这家视频品牌想做的，是让观众在事情发生之前、正在发生时与之后，都能提前知道城市里有什么在亮着灯。因此，官网首页把公告条放在最顶部：哪一集刚上线、哪个计划正在报名、哪条榜单刚刚更新，全部摆到第一屏之前。这种信息前置的习惯，来自团队的编辑出身——他们最早是在夜班结束后互相传递“哪家店还开着、哪条路好走、哪场演出值不值得去”，后来才决定用镜头把这些信息固定下来。</p>
+          <p>而“不打烊”三个字，既是播出节奏，也是态度。品牌的内容日历按夜晚划分，从 21:00 的夜游指南，到 23:30 的深夜食记，再到 01:00 之后的人物长片，观众可以按自己的作息找到对应的内容。团队把这种排布称为“夜间的连续陪伴”：不是一次性爆款，而是长期、稳定、值得信赖的更新。对很多观众来说，打开官网查看今夜更新，已经变成和刷牙、关灯一样自然的小习惯。</p>
+
+          <h3>二、内容方法：把夜晚拆成可记录的坐标</h3>
+          <p>在拍摄方法上，这个品牌坚持“先到达，再提问”。每一条城市夜游作品都要经过至少三次实地走访，确认光线、声音与人物状态，然后才开始架机位。以《凌晨两点的糖水铺》为例，创作团队在三个不同夜晚坐在同一张塑料桌前，直到老板习惯镜头的存在，才开始真正记录。这样的耐心让画面里没有表演感，顾客被拍到时仍然是放松的。团队内部把这种方法叫做“等出来的真实”，它与企业强调的真实、陪伴与品质高度一致。</p>
+          <p>内容结构上，官网把视频分成四个可检索的坐标：地点、时间、人物与主题。地点对应街区与店铺，时间精确到半小时，人物是愿意出镜的普通劳动者，主题则回到夜食、夜读、夜游与夜归。这样的坐标体系让内容可以被反复调用——一位观众想看“凌晨一点的菜市场”，只需在搜索框输入关键词，就能得到按时间排序的视频列表。对创作者而言，这套体系也是选题工具：先看哪些坐标还空着，再去补那一段城市记忆。平台内容生态因此形成正循环，而不是依赖单一爆款。</p>
+
+          <h3>三、社区运营：创作者与观众的相互看见</h3>
+          <p>官方网站没有把创作者藏在二级页面，而是让作者矩阵与视频流并列出现。每位作者都标注擅长领域、作品数与粉丝数，并附一段八十到一百二十字的自述，说明自己为什么在夜里拍摄。这样的设计让观众在看片之外，还能理解创作者的位置：有人是下班后兼职拍摄的会计，有人是开了十年出租车的司机，有人是刚毕业的影像专业学生。品牌方会定期邀请作者参与线上连麦与线下放映，把评论区的高质量留言整理成下一期的选题线索，真正做到用户至上。</p>
+          <p>社区活力还来自可参与的动作。点赞、收藏、复制链接、投稿入口、FAQ 与投票，都被做成很轻的交互，不要求注册冗长表单。团队认为，夜间的用户耐心有限，任何多余步骤都会让分享欲流失。因此，官网的分享路径被压缩到一次点击：复制链接后即可发到社交平台，或在投稿弹窗中直接填写主题与联系方式。持续的社区运营也因此有了稳定的供稿来源，许多系列短片的第一手素材都来自普通观众的随手记录。</p>
+
+          <h3>四、社会责任与长期主义：让夜班被看见</h3>
+          <p>在商业内容之外，品牌持续投入公益题材。过去一年，团队为本地夜班劳动者拍摄了十二支纪实短片，涵盖环卫、急诊、货运与安保岗位，并与社区合作举办了三场免费放映。这些内容不追求高播放，却构成了品牌影响力的另一面：让不被注意的岗位被看见，让城市的夜间运转被理解。官方网站为此单独设置了“企业动态”栏目，公开项目进度与合作伙伴，接受公众监督与建议。</p>
+          <p>长期主义体现在很多细节：不追热点式改名，不堆砌重复内容，不为了流量牺牲画质。所有上线内容坚持高清正版，片尾统一署名创作者与协作者；每季度公布一次内容更新日志，说明哪些栏目调整、哪些专题暂缓。正因如此，这个品牌在本地影像社区中积累了稳定口碑，被视为值得信赖的城市夜生活内容平台。它不急于扩张，而是把“持续运营”四个字落实到每周的更新表里——这也是麻豆不打烊早知道愿意被记住的方式。</p>
+        </div>
+        <aside class="md-nb-deep-card md-nb-reveal">
+          <h4>品牌关键词速览</h4>
+          <ul>
+            <li>定位：城市夜生活原创视频社区</li>
+            <li>更新节奏：每晚 21:00 起分时段上线</li>
+            <li>内容方向：夜游、夜食、夜读、夜归</li>
+            <li>制作标准：高清正版、实地走访、平视记录</li>
+            <li>社区机制：投稿、投票、连麦、线下放映</li>
+            <li>合作方式：专题共创与公益拍摄</li>
+            <li>价值主张：真实、陪伴、品质、持续运营</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵 -->
+  <section class="md-nb-sec" id="md-nb-authors">
+    <div class="md-nb-container">
+      <div class="md-nb-sec-head md-nb-reveal">
+        <div class="md-nb-sec-eyebrow">CREATORS</div>
+        <h2>创作者矩阵 · 麻豆不打烊早知道的夜行同伴</h2>
+        <p class="md-nb-sec-desc">他们来自不同职业，却都在夜里举起镜头。点击可查看作者信息，平台为每位入驻创作者提供官方认证与内容支持。</p>
+      </div>
+      <div class="md-nb-authors">
+        <article class="md-nb-author md-nb-reveal">
+          <div class="md-nb-avatar" style="background:linear-gradient(135deg,#ffb27d,#ff5a1f);">灯</div>
+          <h3>阿灯的夜行</h3>
+          <div class="md-nb-role">城市探索 · 夜游记录</div>
+          <p>做了六年夜班编辑，习惯在下班后沿着同一条街走回家。擅长用长镜头记录街道气息，作品节奏偏慢，偏爱环境声与自然光。相信一条街的故事藏在收摊之后。</p>
+          <div class="md-nb-author-foot"><span>作品 86</span><span>粉丝 12.4 万</span></div>
+          <button class="md-nb-author-btn" type="button" data-md-nb-author="阿灯的夜行">查看作者信息</button>
+        </article>
+        <article class="md-nb-author md-nb-reveal">
+          <div class="md-nb-avatar" style="background:linear-gradient(135deg,#3ee6b0,#1d9c78);">满</div>
+          <h3>小满看城市</h3>
+          <div class="md-nb-role">人物访谈 · 城市观察</div>
+          <p>社会学背景，长期跟踪夜班群体的工作状态。拍摄前会先做三次不拿机器的聊天，再决定是否开机。作品常以一位普通人的一天为结构，强调尊重与不打扰。</p>
+          <div class="md-nb-author-foot"><span>作品 64</span><span>粉丝 9.7 万</span></div>
+          <button class="md-nb-author-btn" type="button" data-md-nb-author="小满看城市">查看作者信息</button>
+        </article>
+        <article class="md-nb-author md-nb-reveal">
+          <div class="md-nb-avatar" style="background:linear-gradient(135deg,#ffd166,#e0a020);">锅</div>
+          <h3>锅气研究室</h3>
+          <div class="md-nb-role">美食烹饪 · 深夜食记</div>
+          <p>前餐厅后厨，现专职拍夜市小摊。喜欢拆解出餐流程与火候细节，把三分钟出餐做成可学习的教程。镜头贴近锅边，也贴近摊主的双手，追求热气腾腾的真实感。</p>
+          <div class="md-nb-author-foot"><span>作品 112</span><span>粉丝 15.8 万</span></div>
+          <button class="md-nb-author-btn" type="button" data-md-nb-author="锅气研究室">查看作者信息</button>
+        </article>
+        <article class="md-nb-author md-nb-reveal">
+          <div class="md-nb-avatar" style="background:linear-gradient(135deg,#9bb8ff,#4b6fd6);">言</div>
+          <h3>林言手记</h3>
+          <div class="md-nb-role">文化访谈 · 夜读陪伴</div>
+          <p>独立书店店员，负责夜班时段。擅长把阅读体验做成声音影像，作品常配上轻柔翻页声与街道环境音。希望给睡不着的人一段不催促的陪伴，而不是知识灌输。</p>
+          <div class="md-nb-author-foot"><span>作品 47</span><span>粉丝 6.3 万</span></div>
+          <button class="md-nb-author-btn" type="button" data-md-nb-author="林言手记">查看作者信息</button>
+        </article>
+        <article class="md-nb-author md-nb-reveal">
+          <div class="md-nb-avatar" style="background:linear-gradient(135deg,#c9a0ff,#7a4bd6);">慢</div>
+          <h3>慢镜组</h3>
+          <div class="md-nb-role">创作幕后 · 教程干货</div>
+          <p>三人小团队，专接夜拍与低光环境项目。喜欢公开工作流，从分镜到调色逐条拆解，连参数都愿意分享。认为创作者的成长来自互相学习，而不是互相保留。</p>
+          <div class="md-nb-author-foot"><span>作品 39</span><span>粉丝 5.1 万</span></div>
+          <button class="md-nb-author-btn" type="button" data-md-nb-author="慢镜组">查看作者信息</button>
+        </article>
+        <article class="md-nb-author md-nb-reveal">
+          <div class="md-nb-avatar" style="background:linear-gradient(135deg,#ff9fb2,#d6455f);">露</div>
+          <h3>白露记录</h3>
+          <div class="md-nb-role">职场日常 · 生活记录</div>
+          <p>白天在写字楼上班，晚上用手机记录便利店与夜班同事。作品短小克制，擅长用一天的时间线讲清一份工作的辛苦与体面。她说记录本身就是一种体谅。</p>
+          <div class="md-nb-author-foot"><span>作品 58</span><span>粉丝 7.2 万</span></div>
+          <button class="md-nb-author-btn" type="button" data-md-nb-author="白露记录">查看作者信息</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 数据榜单 + 评论 -->
+  <section class="md-nb-sec" id="md-nb-rank">
+    <div class="md-nb-container">
+      <div class="md-nb-sec-head md-nb-reveal">
+        <div class="md-nb-sec-eyebrow">RANKING & VOICES</div>
+        <h2>榜单与口碑 · 麻豆不打烊早知道月度观察</h2>
+        <p class="md-nb-sec-desc">基于站内播放、收藏、完播与评论整理的月度榜单，帮助观众快速找到值得一看的夜影像，也记录社区的成长轨迹。</p>
+      </div>
+      <div class="md-nb-rank">
+        <div class="md-nb-rank-col md-nb-reveal">
+          <h3>热度榜</h3>
+          <ol class="md-nb-rank-list">
+            <li>凌晨两点的糖水铺 <b>8.6 万</b></li>
+            <li>夜游步行街十二家老店 <b>5.2 万</b></li>
+            <li>末班公交的十二个乘客 <b>4.2 万</b></li>
+            <li>锅气三分钟 <b>3.9 万</b></li>
+            <li>夜班便利店十二小时 <b>1.6 万</b></li>
+          </ol>
+        </div>
+        <div class="md-nb-rank-col md-nb-reveal">
+          <h3>新人榜</h3>
+          <ol class="md-nb-rank-list">
+            <li>白露记录 · 首月上榜 <b>7.2 万粉</b></li>
+            <li>巷口收音机 <b>3.4 万粉</b></li>
+            <li>夜航手账 <b>2.9 万粉</b></li>
+            <li>三楼窗台 <b>2.1 万粉</b></li>
+            <li>天桥下的吉他 <b>1.8 万粉</b></li>
+          </ol>
+        </div>
+        <div class="md-nb-rank-col md-nb-reveal">
+          <h3>口碑榜</h3>
+          <ol class="md-nb-rank-list">
+            <li>夜里的一盏灯 · 系列 <b>9.1 分</b></li>
+            <li>城市打烊后 · 第 6 集 <b>8.9 分</b></li>
+            <li>夜读书单 · 五本散文 <b>8.7 分</b></li>
+            <li>修表匠的工作台 <b>8.6 分</b></li>
+            <li>凌晨收摊之后 <b>8.4 分</b></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="md-nb-sec-head md-nb-reveal" style="margin-top:42px;">
+        <div class="md-nb-sec-eyebrow">COMMUNITY</div>
+        <h2>真实评价 · 来自夜行观众的留言</h2>
+      </div>
+      <div class="md-nb-comments">
+        <article class="md-nb-comment md-nb-reveal">
+          <div class="md-nb-comment-head"><strong>@夜跑第五年</strong><span>11 月 21 日</span></div>
+          <p>看完糖水铺那期正好是凌晨一点，我家楼下也有一家这样的店，明天准备去跟老板说声谢谢。这种片子不用力煽情，但看完心里很稳。</p>
+        </article>
+        <article class="md-nb-comment md-nb-reveal">
+          <div class="md-nb-comment-head"><strong>@南门炒粉常客</strong><span>11 月 20 日</span></div>
+          <p>锅气那期把我们摊主拍得很真实，连他擦锅的手势都对。唯一建议是出餐流程可以再标注一下时间点，方便新手学。</p>
+        </article>
+        <article class="md-nb-comment md-nb-reveal">
+          <div class="md-nb-comment-head"><strong>@一条咸鱼编辑</strong><span>11 月 19 日</span></div>
+          <p>做内容的人看慢镜组的幕后拆解很有收获，尤其是夜景降噪那一段，参数给得实在，没有藏私。希望多做这种教程。</p>
+        </article>
+        <article class="md-nb-comment md-nb-reveal">
+          <div class="md-nb-comment-head"><strong>@凌晨三点不睡</strong><span>11 月 18 日</span></div>
+          <p>声音处理很舒服，没有突然的巨响，戴耳机听也不刺耳。作为长期失眠的人，这种温柔的片子确实像陪伴。</p>
+        </article>
+        <article class="md-nb-comment md-nb-reveal">
+          <div class="md-nb-comment-head"><strong>@城市观察小组</strong><span>11 月 17 日</span></div>
+          <p>比较欣赏你们对夜班劳动者的处理方式，没有猎奇，也没有拔高。如果能补充一下拍摄授权说明会更完整。</p>
+        </article>
+        <article class="md-nb-comment md-nb-reveal">
+          <div class="md-nb-comment-head"><strong>@新来的拍客</strong><span>11 月 16 日</span></div>
+          <p>已经报名第二期拍客计划，审核反馈很快，邮件里还给了选题建议，感觉是真的想培养人，而不是收素材。</p>
+        </article>
+        <article class="md-nb-comment md-nb-reveal">
+          <div class="md-nb-comment-head"><strong>@老城住户</strong><span>11 月 15 日</span></div>
+          <p>步行街那期拍到了我小时候的裁缝铺，虽然已经换了招牌，还是认出来了。希望这个系列能一直做下去。</p>
+        </article>
+        <article class="md-nb-comment md-nb-reveal">
+          <div class="md-nb-comment-head"><strong>@爱看长片的人</strong><span>11 月 14 日</span></div>
+          <p>整体节奏很好，就是部分片子结尾稍显仓促。另外评论区要是有按时间排序会更方便追讨论。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 企业动态 + 合作 -->
+  <section class="md-nb-sec" id="md-nb-news">
+    <div class="md-nb-container">
+      <div class="md-nb-sec-head md-nb-reveal">
+        <div class="md-nb-sec-eyebrow">NEWSROOM</div>
+        <h2>企业动态与合作伙伴 · 麻豆不打烊早知道官方发布</h2>
+        <p class="md-nb-sec-desc">栏目调整、项目进度与合作伙伴信息，统一在此公开，确保品牌运营透明、可追溯。</p>
+      </div>
+      <div class="md-nb-two-col">
+        <div class="md-nb-reveal">
+          <ul class="md-nb-news-list">
+            <li>
+              <time>2026-11-21</time><strong>《凌晨两点的糖水铺》第 7 集上线</strong>
+              <p>新增 18 分钟正片与 4 分钟拍摄手记，官网同步开放收藏与分享，支持高清播放。</p>
+            </li>
+            <li>
+              <time>2026-11-20</time><strong>不打烊拍客计划第二期开放报名</strong>
+              <p>招募 50 位城市记录者，报名截止 12 月 8 日，入选者将获得稿酬、设备支援与官方发布位。</p>
+            </li>
+            <li>
+              <time>2026-11-18</time><strong>夜班劳动者纪实项目第三场放映完成</strong>
+              <p>与社区文化站合作，在城南街道举办免费放映，现场回收观众问卷 126 份。</p>
+            </li>
+            <li>
+              <time>2026-11-15</time><strong>11 月内容更新日志发布</strong>
+              <p>新增“夜读”子栏目，调整榜单口径为完播加权，FAQ 扩充至 8 条。</p>
+            </li>
+          </ul>
+        </div>
+        <div class="md-nb-reveal">
+          <div class="md-nb-partner-grid">
+            <div class="md-nb-partner"><b>城南社区文化站</b>公益放映与拍摄协调支持</div>
+            <div class="md-nb-partner"><b>夜航书店</b>夜读栏目内容共建</div>
+            <div class="md-nb-partner"><b>小满影像工作室</b>低光拍摄技术协作</div>
+            <div class="md-nb-partner"><b>107 路公交夜班车队</b>城市观察拍摄协助</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 FAQ + 投稿 CTA -->
+  <section class="md-nb-sec" id="md-nb-faq">
+    <div class="md-nb-container">
+      <div class="md-nb-sec-head md-nb-reveal">
+        <div class="md-nb-sec-eyebrow">HELP & JOIN</div>
+        <h2>常见问题 · 关于观看、投稿与品牌合作</h2>
+        <p class="md-nb-sec-desc">如果你第一次来到麻豆不打烊早知道官方网站，以下问题可以帮你快速了解观看方式、创作者入驻与内容使用规则。</p>
+      </div>
+      <div class="md-nb-reveal">
+        <details class="md-nb-faq" open>
+          <summary>官网的视频可以免费观看吗？</summary>
+          <p>可以。本站所有原创正片均提供免费高清观看，部分合集支持下载与离线保存，下载前请留意片尾的授权说明。</p>
+        </details>
+        <details class="md-nb-faq">
+          <summary>如何成为平台入驻创作者？</summary>
+          <p>通过页面上的“我要投稿”入口提交作品与联系方式，编辑团队会在七个工作日内给出反馈。通过初筛后可申请官方认证，获得选题辅导与发布支持。</p>
+        </details>
+        <details class="md-nb-faq">
+          <summary>为什么有的视频只有文字索引？</summary>
+          <p>部分内容因拍摄授权或人物隐私限制，不公开完整画面，仅提供文字摘要与创作手记，以保证记录价值与受访者权益的平衡。</p>
+        </details>
+        <details class="md-nb-faq">
+          <summary>投稿的作品需要满足什么技术要求？</summary>
+          <p>建议横版 16:9、1080P 以上、时长三分钟以内，音频清晰无爆音。手机拍摄同样欢迎，重点是内容真实、有具体细节。</p>
+        </details>
+        <details class="md-nb-faq">
+          <summary>品牌可以参与专题共创吗？</summary>
+          <p>可以。请通过留言或邮件说明合作方向与时间安排，我们更倾向与本地文化、公共空间、公益项目相关的长期合作，而非一次性植入。</p>
+        </details>
+        <details class="md-nb-faq">
+          <summary>榜单的排名依据是什么？</summary>
+          <p>热度榜参考播放与分享，口碑榜参考完播率与评论质量，新人榜面向入驻不满半年的创作者，每月初更新一次，口径在动态中公开。</p>
+        </details>
+        <details class="md-nb-faq">
+          <summary>如何反馈内容问题或提出建议？</summary>
+          <p>每部作品下方均提供反馈入口，也可以在评论区留言。涉及授权与事实错误的反馈会优先处理，并在更新日志中说明处理结果。</p>
+        </details>
+      </div>
+
+      <div class="md-nb-cta md-nb-reveal" style="margin-top:34px;">
+        <div>
+          <h2>你也在夜里记录吗？</h2>
+          <p>把镜头交给真实的生活。麻豆不打烊早知道持续开放投稿与共创，期待你的三分钟，成为城市夜晚的一块拼图。</p>
+        </div>
+        <div class="md-nb-cta-btns">
+          <button class="md-nb-btn md-nb-btn-primary" type="button" data-md-nb-modal="submit">立即投稿报名</button>
+          <button class="md-nb-btn md-nb-btn-ghost" type="button" data-md-nb-modal="about">品牌合作咨询</button>
+          <button class="md-nb-btn md-nb-btn-ghost" type="button" data-md-nb-copy data-md-nb-copy-title="麻豆不打烊早知道官方网站">复制官网链接</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="md-nb-footer">
+  <div class="md-nb-container">
+    <div class="md-nb-footer-grid">
+      <div>
+        <h4>麻豆不打烊早知道</h4>
+        <p>城市夜生活原创视频品牌与内容社区，每晚 21:00 起分时段更新。坚持高清正版、实地记录与平视表达，为创作者搭台，为夜行者留灯。</p>
+        <p class="md-nb-mini">官方网站 · 持续运营中 · 期待与你一起把夜晚拍得更清楚</p>
+      </div>
+      <div>
+        <h4>内容栏目</h4>
+        <ul>
+          <li><a href="#md-nb-focus">今夜焦点</a></li>
+          <li><a href="#md-nb-videos">热门视频</a></li>
+          <li><a href="#md-nb-topics">专题企划</a></li>
+          <li><a href="#md-nb-rank">月度榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与方式</h4>
+        <ul>
+          <li><a href="#md-nb-faq">常见问题</a></li>
+          <li><a href="#md-nb-authors">创作者矩阵</a></li>
+          <li><a href="#md-nb-news">企业动态</a></li>
+          <li><a href="#md-nb-deep">品牌解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li>投稿邮箱：submit@nightday.example</li>
+          <li>合作邮箱：partner@nightday.example</li>
+          <li>工作时间：每日 14:00 — 24:00</li>
+          <li>办公地点：城南文化街区 3 号</li>
+        </ul>
+      </div>
+    </div>
+    <div class="md-nb-footer-bottom">
+      <span>© 2026 麻豆不打烊早知道 官方网站 版权所有 · 未经授权禁止转载</span>
+      <span>内容备案号：夜影备 2026-1186 号 · 持续更新与维护</span>
+    </div>
+  </div>
+</footer>
+
+<button class="md-nb-backtop" id="md-nb-backtop" aria-label="回到顶部">↑</button>
+<div class="md-nb-toast" id="md-nb-toast" role="status" aria-live="polite"></div>
+
+<div class="md-nb-modal" id="md-nb-modal" role="dialog" aria-modal="true" aria-labelledby="md-nb-modal-title">
+  <div class="md-nb-modal-box">
+    <button class="md-nb-modal-close" type="button" id="md-nb-modal-close" aria-label="关闭弹窗">×</button>
+    <h3 id="md-nb-modal-title">提示</h3>
+    <div id="md-nb-modal-body"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var namespace = "md-nb";
+
+  /* ---------- toast ---------- */
+  var toastEl = document.getElementById(namespace + "-toast");
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("is-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove("is-show");
+    }, 2200);
+  }
+
+  /* ---------- mobile nav ---------- */
+  var menuBtn = document.getElementById(namespace + "-menu-btn");
+  var nav = document.getElementById(namespace + "-nav");
+  menuBtn.addEventListener("click", function(){
+    var open = nav.classList.toggle("is-open");
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    menuBtn.textContent = open ? "×" : "☰";
+  });
+  nav.addEventListener("click", function(e){
+    if(e.target.tagName === "A" && window.innerWidth <= 820){
+      nav.classList.remove("is-open");
+      menuBtn.setAttribute("aria-expanded","false");
+      menuBtn.textContent = "☰";
+    }
+  });
+
+  /* ---------- search ---------- */
+  var searchInput = document.getElementById(namespace + "-search-input");
+  var searchBtn = document.getElementById(namespace + "-search-btn");
+  var searchTip = document.getElementById(namespace + "-search-tip");
+  var searchIndex = [
+    {k:"糖水铺", t:"《凌晨两点的糖水铺》：一条街的最后十八分钟"},
+    {k:"糖水", t:"《凌晨两点的糖水铺》：一条街的最后十八分钟"},
+    {k:"步行街", t:"夜游步行街：霓虹灯下的十二家老店"},
+    {k:"夜游", t:"夜游步行街：霓虹灯下的十二家老店"},
+    {k:"炒粉", t:"锅气三分钟：一家炒粉摊的出餐节奏"},
+    {k:"锅气", t:"锅气三分钟：一家炒粉摊的出餐节奏"},
+    {k:"书店", t:"夜读书单：五本适合凌晨翻开的散文"},
+    {k:"夜读", t:"夜读书单：五本适合凌晨翻开的散文"},
+    {k:"公交", t:"末班公交 107 路的十二个乘客"},
+    {k:"司机", t:"夜班司机的一百个乘客故事 · 第 9 期"},
+    {k:"教程", t:"一支 MV 的夜拍流程：从分镜到调色"},
+    {k:"幕后", t:"一支 MV 的夜拍流程：从分镜到调色"},
+    {k:"便利店", t:"深夜便利店店员的十二小时"},
+    {k:"创作者", t:"创作者矩阵 · 阿灯的夜行、小满看城市等 6 位作者"},
+    {k:"作者", t:"创作者矩阵 · 阿灯的夜行、小满看城市等 6 位作者"},
+    {k:"榜单", t:"月度热度榜 / 新人榜 / 口碑榜"},
+    {k:"投稿", t:"不打烊拍客计划第二期报名中，截止 12 月 8 日"},
+    {k:"报名", t:"不打烊拍客计划第二期报名中，截止 12 月 8 日"}
+  ];
+  function doSearch(){
+    var q = (searchInput.value || "").trim();
+    if(!q){
+      searchTip.textContent = "请输入关键词，例如：夜游、炒粉、创作者";
+      return;
+    }
+    var hit = searchIndex.filter(function(item){
+      return item.k.indexOf(q) >= 0 || q.indexOf(item.k) >= 0;
+    });
+    if(hit.length){
+      var first = hit[0];
+      searchTip.textContent = "找到相关：" + first.t + (hit.length > 1 ? "（共 " + hit.length + " 条相关）" : "");
+      toast("已定位相关内容：" + first.t);
+    }else{
+      searchTip.textContent = "暂未找到“" + q + "”，试试 夜游 / 炒粉 / 书店 / 投稿";
+    }
+  }
+  searchBtn.addEventListener("click", doSearch);
+  searchInput.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){ e.preventDefault(); doSearch(); }
+  });
+  searchInput.addEventListener("input", function(){
+    if(!searchInput.value){ searchTip.textContent = ""; }
+  });
+
+  /* ---------- like / save / copy ---------- */
+  document.addEventListener("click", function(e){
+    var likeBtn = e.target.closest("[data-md-nb-like]");
+    if(likeBtn){
+      var numEl = likeBtn.querySelector("[data-md-nb-like-num]");
+      var n = parseInt((numEl ? numEl.textContent : "0").replace(/,/g,""), 10) || 0;
+      if(likeBtn.classList.contains("is-on")){
+        likeBtn.classList.remove("is-on");
+        n = Math.max(0, n - 1);
+        if(numEl){ numEl.textContent = n; }
+        toast("已取消点赞");
+      }else{
+        likeBtn.classList.add("is-on");
+        n = n + 1;
+        if(numEl){ numEl.textContent = n; } else { likeBtn.textContent = "♥ 已赞"; }
+        toast("感谢点赞，今夜继续更新");
+      }
+      return;
+    }
+
+    var saveBtn = e.target.closest("[data-md-nb-save]");
+    if(saveBtn){
+      var on = saveBtn.classList.toggle("is-saved");
+      saveBtn.textContent = on ? "★ 已收藏" : "☆ 收藏";
+      toast(on ? "已加入收藏，稍后可回看" : "已取消收藏");
+      return;
+    }
+
+    var copyBtn = e.target.closest("[data-md-nb-copy]");
+    if(copyBtn){
+      var title = copyBtn.getAttribute("data-md-nb-copy-title") || "麻豆不打烊早知道";
+      var text = title + " — 麻豆不打烊早知道官方网站推荐内容";
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){
+          toast("链接已复制，欢迎分享给夜行的朋友");
+        }).catch(function(){
+          toast("已生成分享文案：" + title);
+        });
+      }else{
+        toast("已生成分享文案：" + title);
+      }
+      return;
+    }
+
+    var commentBtn = e.target.closest("[data-md-nb-comment]");
+    if(commentBtn){
+      openModal("评论 · 凌晨两点的糖水铺", [
+        "<p><strong>@夜航手账：</strong>收摊那段太真实了，卷帘门的声音一出来就想起我家楼下。</p>",
+        "<p><strong>@南门炒粉常客：</strong>希望下次能拍拍老板收工后去哪吃夜宵。</p>",
+        "<p><strong>@一条咸鱼编辑：</strong>没有配乐反而更耐看，环境声处理得很干净。</p>",
+        "<p class='md-nb-mini'>评论区示例展示，完整讨论请在看片页参与。</p>"
+      ].join(""));
+      return;
+    }
+
+    var authorBtn = e.target.closest("[data-md-nb-author]");
+    if(authorBtn){
+      var name = authorBtn.getAttribute("data-md-nb-author");
+      openModal("创作者 · " + name, [
+        "<p>昵称：<strong>" + name + "</strong></p>",
+        "<p>认证状态：官方认证创作者 · 麻豆不打烊早知道签约作者</p>",
+        "<p>擅长方向：城市夜行记录、低光拍摄与人物访谈。</p>",
+        "<p>合作方式：可通过页脚邮箱联系，或经投稿入口提交共创选题。平台为作者提供高清素材托管、发布支持与专题推荐位。</p>"
+      ].join(""));
+      return;
+    }
+
+    var modalTrigger = e.target.closest("[data-md-nb-modal]");
+    if(modalTrigger){
+      var type = modalTrigger.getAttribute("data-md-nb-modal");
+      if(type === "submit"){
+        openModal("投稿与报名", [
+          "<p>不打烊拍客计划第二期正在报名，截止 12 月 8 日。</p>",
+          "<ul><li>提交内容：3 分钟以内原创短片，主题围绕城市夜晚</li>",
+          "<li>技术要求：16:9 横版、1080P 以上、音频清晰</li>",
+          "<li>审核周期：七个工作日内反馈</li>",
+          "<li>入选权益：稿酬、设备支援、官方认证与发布推荐</li></ul>",
+          "<p>请将作品说明与联系方式发送至 submit@nightday.example，或在评论区留言预约选题沟通。</p>"
+        ].join(""));
+      }else{
+        openModal("关于麻豆不打烊早知道", [
+          "<p>麻豆不打烊早知道是一个以城市夜生活为切口的原创视频品牌，官方网站汇集夜游、夜食、夜读与夜归四条内容线。</p>",
+          "<p>品牌坚持高清正版、实地走访与平视记录，致力于与创作者共同搭建值得信赖的内容生态，并持续参与夜班劳动者相关的公益拍摄。</p>",
+          "<p>合作与共创请联系 partner@nightday.example，我们优先考虑长期、真诚、与本地文化相关的项目。</p>"
+        ].join(""));
+      }
+    }
+  });
+
+  /* ---------- modal ---------- */
+  var modal = document.getElementById(namespace + "-modal");
+  var modalTitle = document.getElementById(namespace + "-modal-title");
+  var modalBody = document.getElementById(namespace + "-modal-body");
+  var modalClose = document.getElementById(namespace + "-modal-close");
+  function openModal(title, html){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add("is-open");
+  }
+  function closeModal(){
+    modal.classList.remove("is-open");
+  }
+  modalClose.addEventListener("click", closeModal);
+  modal.addEventListener("click", function(e){
+    if(e.target === modal){ closeModal(); }
+  });
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape"){ closeModal(); }
+  });
+
+  /* ---------- counters ---------- */
+  var counters = document.querySelectorAll("[data-md-nb-count]");
+  var counterDone = false;
+  function formatNum(num){
+    if(num >= 10000){
+      return (num / 10000).toFixed(num >= 1000000 ? 0 : 1).replace(/\.0$/,"") + " 万+";
+    }
+    return String(num);
+  }
+  function runCounters(){
+    if(counterDone){ return; }
+    counterDone = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute("data-md-nb-count"), 10) || 0;
+      var start = null;
+      var dur = 1100;
+      function step(ts){
+        if(!start){ start = ts; }
+        var p = Math.min((ts - start) / dur, 1);
+        var val = Math.floor(target * (1 - Math.pow(1 - p, 3)));
+        el.textContent = formatNum(val);
+        if(p < 1){ requestAnimationFrame(step); }
+        else{ el.textContent = formatNum(target); }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          en.target.classList.add("is-in");
+          if(en.target.querySelector("[data-md-nb-count]")){ runCounters(); }
+        }
+      });
+    }, {threshold:0.14});
+    document.querySelectorAll("." + namespace + "-reveal").forEach(function(el){ io.observe(el); });
+    var statsWrap = document.querySelector("." + namespace + "-stats");
+    if(statsWrap){
+      var io2 = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){ runCounters(); io2.disconnect(); }
+        });
+      }, {threshold:0.3});
+      io2.observe(statsWrap);
+    }
+  }else{
+    document.querySelectorAll("." + namespace + "-reveal").forEach(function(el){
+      el.classList.add("is-in");
+    });
+    runCounters();
+  }
+
+  /* ---------- back to top ---------- */
+  var backBtn = document.getElementById(namespace + "-backtop");
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 520){
+      backBtn.classList.add("is-show");
+    }else{
+      backBtn.classList.remove("is-show");
+    }
+  }, {passive:true});
+  backBtn.addEventListener("click", function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+})();
+</script>
+</body>
+  </html>
